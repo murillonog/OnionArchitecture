@@ -30,14 +30,22 @@ separadas de sua implementação para acoplamento fraco e também a separação 
 
 ## Vantagens:
 As camadas da Onion Architecture são associadas por meio de interfaces. As implantações são feitas durante o tempo de execução;
+
 A engenharia de aplicação é baseada no topo de um modelo de área;
+
 Todas as dependências externas, semelhantes às chamadas de admissão e administração do conjunto de dados, são tratadas em camadas externas;
+
 Sem condições da camada interna com camadas externas;
+
 Os acoplamentos estão no meio;
+
 Design adaptável, viável e conveniente;
+
 Nenhuma razão convincente para fazer atividades normais e compartilhadas;
+
 Pode ser tentado imediatamente, visto que o Application Center não depende de nada.
 
 # Algumas desvantagens da Onion Architecture como segue:
  Difícil de compreender para amadores, incluindo a expectativa de absorver informações. Os modeladores geralmente confundem as obrigações de separação entre as camadas;
+ 
  Interfaces intensamente utilizadas.
