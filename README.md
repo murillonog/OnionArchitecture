@@ -9,22 +9,22 @@ resposta para problemas normais. Camadas de design de cebola se associam umas à
 
 # Camadas:
 # Camada de Domínio
-## Ela existe na parte central da arquitetura Onion, onde consiste em todas as entidades de domínio de aplicativo que nada mais 
+ Ela existe na parte central da arquitetura Onion, onde consiste em todas as entidades de domínio de aplicativo que nada mais 
 são do que modelos de banco de dados criados pela abordagem do código em primeiro lugar. Neste projeto, usei a API Fluent na 
 criação do esquema de tabela usando o Entity Framework.
 
 # Camada de Repositório
-## A camada de repositório atua como uma camada intermediária entre os serviços e objetos de modelo e nesta camada, manteremos 
+ A camada de repositório atua como uma camada intermediária entre os serviços e objetos de modelo e nesta camada, manteremos 
 todas as migrações de banco de dados e objeto de contexto de dados de aplicativo e nesta camada, normalmente adicionamos 
 interfaces que consistirão em padrão de acesso a dados de leitura e gravar operações envolvendo um banco de dados.
 
 # Camada de Serviços
-## Esta camada é usada para a comunicação entre a camada do Repositório e o Projeto Principal, onde consiste em APIs exponíveis. A 
+ Esta camada é usada para a comunicação entre a camada do Repositório e o Projeto Principal, onde consiste em APIs exponíveis. A 
 camada de serviço também pode conter a lógica de negócios para uma entidade. Nesta camada, as interfaces de serviço são mantidas 
 separadas de sua implementação para acoplamento fraco e também a separação de interesses.
 
 # Camada UI
-## A IU nada mais é do que um aplicativo front-end que se comunicará com esta API.
+ A IU nada mais é do que um aplicativo front-end que se comunicará com esta API.
 
 # Prós e contras na Onion Architecture
 
